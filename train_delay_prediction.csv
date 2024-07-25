@@ -1,0 +1,90 @@
+﻿departure_station,arrival_station,departure_time,arrival_time,day_of_week,weather,delay
+Lokmanyatilak,Gorakhpur,01:00,04:00,"Monday, Tuesday, Wednesday, Thursday, Friday",clear,1
+Gorakhpur,Lokmanyatilak,19:00,04:20,Saturday,rain,1
+Mumbai CST,Bhubaneshwar,15:05,04:35,Sunday,rain,1
+Bhubaneshwar,Mumbai CST,15:25,03:55,Wednesday,rain,1
+Lokmanyatilak,Darbhanga,12:15,01:10,"Tuesday, Thursday, Friday",clear,2
+Darbhanga,Lokmanyatilak,13:05,03:40,"Monday, Tuesday, Wednesday, Thursday, Friday",clear,1
+Lokmanyatilak,Varanasi,12:40,19:25,Monday,clear,2
+Varanasi,Lokmanyatilak,15:50,22:50,"Tuesday, Saturday",clear,1
+Mumbai CST,Varanasi,00:10,04:40,Monday,clear,1
+Varanasi,Mumbai CST,11:20,14:15,Thursday,rain,1
+Mumbai CST,Gadag,21:20,12:20,"Thursday, Sunday",rain,1
+Gadag,Mumbai CST,13:40,05:10,"Sunday, Tuesday",clear,0
+Mumbai CST,Ksr Bengaluru,08:10,08:50,Tuesday,clear,0
+Ksr Benguluru,Mumbai CST,20:30,20:15,"Tuesday, Friday",rain,0
+Habibganj,H.Nizamuddin,21:05,08:00,"Friday, Saturday",rain,2
+H.Nijamuddin,Habibganz,20:55,07:05,Sunday,clear,1
+Lucknow Jn,New delhi,22:00,06:50,"Sunday, Saturday, Monday",rain,0
+New Delhi,Lucknow Jn,22:05,06:55,"Sunday, Saturday, Monday",rain,0
+Ksr Benguluru,Danapur,10:00,09:05,Thursday,clear,0
+Danapur,Ksr Bengaluru,20:10,20:20,"Tuesday, Thursday, Friday",clear,0
+Sealdah,New Alipurdhar,23:20,12:20,"Thursday, Sunday",clear,0
+New Alipuduar,Sealdah,17:45,06:45,"Sunday, Saturday, Monday",clear,2
+Rajgir,New delhi,08:00,04:45,Monday,clear,2
+New Delhi,Rajgir,13:10,10:30,"Tuesday, Thursday, Friday",clear,0
+Rajendra Nagar,New Delhi,17:45,07:50,"Wednesday, Friday",clear,1
+New Delhi,Rajendra Nagar,17:25,07:35,Thursday,rain,1
+Prayagraj,New Delhi,21:30,07:00,"Friday, Saturday",rain,1
+New Delhi,Prayagraj,21:20,07:15,Saturday,clear,0
+Lucknow ,New Delhi,06:00,15:05,"Sunday, Tuesday",clear,0
+New Delhi,Lucknow ,12:25,22:00,"Tuesday, Thursday",rain,0
+NJP,ASR,08:15,17:35,"Thursday,Saturday",clear,1
+ASR,NJP,09:30,18:30,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",rain,1
+Kolkata,Amritsar,12:10,17:20,Sunday,clear,2
+Amritsar,Kolkata,05:55,11:35,Thursday,clear,2
+Kanpur,New delhi,23:45,06:30,Tuesday,clear,2
+New Delhi,Kanpur,23:55,06:30,"Thursday, Sunday",clear,1
+Delhi S Rohilla,Jodhpur,22:25,09:00,Sunday,clear,1
+Jodhpur,Delhi S Rohilla,19:00,05:40,Monday,rain,0
+Jodhpur,Jaipur,16:00,21:15,"Wednesday, Friday",rain,0
+Jaipur,Jodhpur,06:00,10:55,Thursday,clear,1
+Jodhpur,Bandra,19:00,11:35,Thursday,rain,2
+Bandra,Jodhpur,13:30,06:30,"Friday, Saturday",clear,0
+Lucknow Jn,Mumbai CST,19:20,20:15,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",clear,0
+Mumbai CST,Lucknow Jn,08:25,08:40,"Sunday, Monday, Tuesday, Wednesday, Thursday",clear,1
+Gorakhpur,Hisar,16:35,10:00,"Thursday, Sunday",clear,0
+Hisar,Gorakhpur,16:45,09:45,"Friday, Saturday",rain,1
+Manduadih,New delhi,19:55,08:10,"Tuesday, Thursday",clear,1
+New Delhi,Manduadih,18:55,06:50,Wednesday,rain,1
+Ernakulam,H. Nizamuddin,10:50,13:15,Thursday,clear,1
+H. Nizamuddin,Ernakulam,09:15,12:15,"Friday, Saturday",rain,1
+Bapudham Motihari,Anand Vihar,21:10,18:15,Sunday,clear,0
+Anand Vihar,Bapudham Motihari,23:45,20:00,Sunday,clear,1
+Yesvantpur,H. Nizamuddin,13:55,13:00,Wednesday,clear,2
+H. Nizamuddin,Yesvantpur,08:45,06:21,"Tuesday, Sunday",clear,1
+Mumbai CST,Hyderabad,21:50,12:10,Sunday,clear,0
+Hyderabad,Mumbai CST,14:50,04:55,Sunday,clear,2
+Howrah,Secunderabad,07:25,09:15,Tuesday,clear,1
+Secunderabad,Howrah,15:55,17:55,Saturday,clear,0
+H.S. Nanded,Amritsar,09:30,20:25,"Monday, Tuesday, Wednesday, Thursday, Friday",clear,2
+Amritsar,H.S. Nanded,05:30,16:00,"Friday, Saturday",clear,2
+Hyderabad,New Delhi,06:25,09:05,Saturday,clear,1
+New Delhi,Hyderabad,17:25,19:35,"Friday, Saturday",clear,1
+Secunderabad,Danapur,12:15,21:30,Monday,clear,1
+Danapur,Secunderabad,12:15,21:30,Tuesday,rain,1
+Bhubaneswar,New Delhi,23:07,04:20,Wednesday,clear,1
+New Delhi,Bhubaneshwar,22:25,03:45,Saturday,clear,0
+Mumbai CST,Howrah,20:35,05:50,Sunday,rain,0
+Howrah,Mumbai CST,20:00,05:20,"Sunday, Saturday, Tuesday",rain,0
+Ahmedabad,Howrah,00:15,13:30,"Sunday, Thursday",clear,0
+Howrah,Ahmedabad,23:55,13:25,"Thursday, Saturday",clear,0
+Mumbai Central,Amritsar,21:25,05:30,"Saturday, Monday",clear,1
+Amritsar,Mumbai Central,21:25,05:05,Saturday,clear,1
+Ahmedabad,Delhi,18:55,10:10,"Monday, Friday",rain,1
+Delhi,Ahmedabad,15:20,07:40,"Friday, Monday",clear,1
+Bandra,Amritsar,12:00,19:20,"Monday, Saturday, Sunday",clear,1
+Amritsar,Bandra,08:10,14:45,"Sunday, Monday, Thursday",clear,1
+Mumbai Central,Ahmedabad,13:40,21:25,Thursday,clear,1
+Ahmedabad,Mumbai Central,04:55,12:35,Tuesday,rain,1
+H. Nizamuddin,Udaipur City,19:00,07:20,Wednesday,clear,1
+Udaipur City,H. Nizamuddin,18:15,06:35,"Tuesday, Wednesday",rain,1
+Tatanagar,Danapur,08:15,20:00,"Saturday, Sunday, Thursday",clear,1
+Danapur,Tatanagar,05:45,17:20,Sunday,clear,1
+Alipurduar,Delhi,09:25,22:40,Tuesday,rain,1
+Delhi,Alipurduar,06:35,20:10,"Saturday, Sunday",rain,1
+Mumbai,Madurai,11:40,18:25,"Sunday, Saturday",clear,2
+Madurai ,Mumbai,09:30,16:40,"Saturday, Friday",clear,1
+Vishakapatnam,New Delhi,22:00,06:35,Friday,rain,0
+New Delhi,Vishakapatnam,20:15,05:05,Monday,rain,0
+Jabalpur,H. Nizamuddin,15:10,05:15,Sunday,clear,1

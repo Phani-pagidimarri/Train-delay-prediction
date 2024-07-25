@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Delay Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('"C:\Users\pagid\OneDrive\Pictures\train background.jpg".jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8); /* Adjust opacity here */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Train Delay Prediction</h1>
+            <form action="/predict" method="post">
+                <label for="departure_time">Departure Time:</label>
+                <input type="text" id="departure_time" name="departure_time"><br>
+                <label for="departure_station">Departure Station:</label>
+                <input type="text" id="departure_station" name="departure_station"><br>
+                <label for="arrival_station">Arrival Station:</label>
+                <input type="text" id="arrival_station" name="arrival_station"><br>
+                <label for="arrival_time">Arrival Time:</label>
+                <input type="text" id="arrival_time" name="arrival_time"><br>
+                <label for="weather">Weather:</label>
+                <input type="text" id="weather" name="weather"><br>
+                <label for="day_of_week">Day of the Week:</label>
+                <input type="text" id="day_of_week" name="day_of_week"><br>
+                <input type="submit" value="Submit">
+            </form>
+            {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+# Load the dataset
+data = pd.read_csv('train_delay_prediction.csv')
+# Display the first few rows of the dataset
+print(data.head())
+# Convert categorical variables to numeric
+data['day_of_week'] = data['day_of_week'].astype('category').cat.codes
+data['weather'] = data['weather'].astype('category').cat.codes
+# Feature and target variables
+X = data.drop('delay', axis=1)
+y = data['delay']
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Standardize the features
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+# Initialize the Random Forest Classifier
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+# Train the model
+model.fit(X_train, y_train)
+# Make predictions
+y_pred = model.predict(X_test)
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+class_report = classification_report(y_test, y_pred)
+print(f'Accuracy: {accuracy}')
+print('Confusion Matrix:')
+print(conf_matrix)
+print('Classification Report:')
+print(class_report)
+import joblib
+# Save the model to a file
+joblib.dump(model, 'train_delay_predictor.pkl')
+# Load the model from the file (for future use)
+model = joblib.load('train_delay_predictor.pkl')
+import pickle
+from flask import Flask , request , jsonify , render_template 
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    if request.method == "POST":
+        # Get user inputs from the form
+        departure_time = request.form["departure_time"]
+        destination = request.form["destination"]
+        # Process user inputs and make predictions
+        # You'll need to implement this part based on your trained model
+        predicted_delay = model.predict([departure_time, destination])
+        return render_template("result.html", prediction=predicted_delay)
+
+if __name__ == "__main__":
+    app.run(debug=True)
