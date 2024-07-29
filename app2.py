@@ -100,7 +100,7 @@ def insert_schedule(departure_time, departure_station, arrival_station, arrival_
     conn.commit()
     conn.close()
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def home():
     return render_template("index.html")
 
